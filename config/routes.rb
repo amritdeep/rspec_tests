@@ -3,6 +3,8 @@ RspectTest::Application.routes.draw do
 
   get "page/help"
 
+  match "page/about" =>"page#about", as: :about, via: :get  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

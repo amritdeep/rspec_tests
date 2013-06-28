@@ -13,6 +13,8 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'haml-rails'
+  #gem 'hmtl2haml'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -23,16 +25,23 @@ end
 group :development, :test do
 
   # Gem for Development	
+
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
 
   # Gem for test
-  gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork'
   
 end
 
