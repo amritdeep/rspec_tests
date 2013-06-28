@@ -1,10 +1,17 @@
 RspectTest::Application.routes.draw do
 
-  match "/home" => "page#home", as: :home, via: :get
-  match "/help" => "page#help", as: :help, via: :get
-  match "/about" =>"page#about", as: :about, via: :get  
-  match "/contact" => "page#contact", as: :contact, via: :get
+  # Routes For Page
+  # match "/home" => "page#home", as: :home, via: :get
+  # match "/help" => "page#help", as: :help, via: :get
+  # match "/about" =>"page#about", as: :about, via: :get  
+  # match "/contact" => "page#contact", as: :contact, via: :get
+  match "/home", to: "page#home"
+  match "/help", to: "page#help"
+  match "/about", to: "page#about"
+  match "/contact", to: "page#contact"
 
+  # Routes For user
+  match "/signup" => "users#new" #, via: :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -36,7 +36,6 @@ describe "Pages" do
     	# 	visit contact_url
     	# 	page.should have_selector('title', text: "'#{:base_title}'| Contact")
     	# end
-
     end
 
   end

@@ -29,6 +29,7 @@ group :development, :test do
 
   gem 'rspec-rails'
   gem 'guard-rspec'
+  # gem 'annotate'
 
   gem 'better_errors'
   gem 'binding_of_caller'
