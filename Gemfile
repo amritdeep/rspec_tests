@@ -24,9 +24,7 @@ group :assets do
 end
 
 group :development, :test do
-
   # Gem for Development	
-
   gem 'rspec-rails'
   gem 'guard-rspec'
   # gem 'annotate'
@@ -39,6 +37,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'factory_girl'
   gem 'database_cleaner'
 
   gem 'guard-spork'

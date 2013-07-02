@@ -1,2 +1,15 @@
 - provide(:title, 'Sign Up')
 %h1 Sign Up
+
+.alert
+	= notice
+	= flash[:errors]
+
+= form_for(@user, method: :post) do |f|
+	= f.text_field :name, placeholder: "Name Please"
+	%br
+	= f.password_field :password, placeholder: "Password Please"
+	%br
+	= f.submit
+
+	

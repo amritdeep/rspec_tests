@@ -11,7 +11,9 @@ RspectTest::Application.routes.draw do
   match "/contact", to: "page#contact"
 
   # Routes For user
-  match "/signup" => "users#new" #, via: :get
+  resources :users
+
+  match "/signup" => "users#new"#, as: :signup
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
